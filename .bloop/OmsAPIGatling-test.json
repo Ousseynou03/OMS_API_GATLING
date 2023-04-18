@@ -1,0 +1,1760 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "OmsAPIGatling-test",
+        "directory": "/home/dione/Documents/Projet/ProjetDaouda/TestPerformance/OmsAPIGatling",
+        "workspaceDir": "/home/dione/Documents/Projet/ProjetDaouda/TestPerformance/OmsAPIGatling",
+        "sources": [
+            "/home/dione/Documents/Projet/ProjetDaouda/TestPerformance/OmsAPIGatling/src/test/scala"
+        ],
+        "dependencies": [
+            "OmsAPIGatling"
+        ],
+        "classpath": [
+            "/home/dione/Documents/Projet/ProjetDaouda/TestPerformance/OmsAPIGatling/target/test-classes",
+            "/home/dione/Documents/Projet/ProjetDaouda/TestPerformance/OmsAPIGatling/target/classes",
+            "/home/dione/.m2/repository/io/gatling/highcharts/gatling-charts-highcharts/3.9.0/gatling-charts-highcharts-3.9.0.jar",
+            "/home/dione/.m2/repository/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar",
+            "/home/dione/.m2/repository/io/gatling/gatling-app/3.9.0/gatling-app-3.9.0.jar",
+            "/home/dione/.m2/repository/io/gatling/gatling-core/3.9.0/gatling-core-3.9.0.jar",
+            "/home/dione/.m2/repository/io/gatling/gatling-netty-util/3.9.0/gatling-netty-util-3.9.0.jar",
+            "/home/dione/.m2/repository/io/gatling/gatling-jdk-util/3.9.0/gatling-jdk-util-3.9.0.jar",
+            "/home/dione/.m2/repository/io/netty/incubator/netty-incubator-transport-native-io_uring/0.0.16.Final/netty-incubator-transport-native-io_uring-0.0.16.Final-linux-x86_64.jar",
+            "/home/dione/.m2/repository/io/netty/incubator/netty-incubator-transport-classes-io_uring/0.0.16.Final/netty-incubator-transport-classes-io_uring-0.0.16.Final.jar",
+            "/home/dione/.m2/repository/io/netty/incubator/netty-incubator-transport-native-io_uring/0.0.16.Final/netty-incubator-transport-native-io_uring-0.0.16.Final-linux-aarch_64.jar",
+            "/home/dione/.m2/repository/io/gatling/gatling-commons/3.9.0/gatling-commons-3.9.0.jar",
+            "/home/dione/.m2/repository/io/gatling/gatling-commons-shared/3.9.0/gatling-commons-shared-3.9.0.jar",
+            "/home/dione/.m2/repository/org/scala-lang/scala-reflect/2.13.10/scala-reflect-2.13.10.jar",
+            "/home/dione/.m2/repository/io/suzaku/boopickle_2.13/1.3.3/boopickle_2.13-1.3.3.jar",
+            "/home/dione/.m2/repository/io/gatling/gatling-commons-shared-unstable/3.9.0/gatling-commons-shared-unstable-3.9.0.jar",
+            "/home/dione/.m2/repository/org/typelevel/spire-macros_2.13/0.17.0/spire-macros_2.13-0.17.0.jar",
+            "/home/dione/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar",
+            "/home/dione/.m2/repository/com/typesafe/scala-logging/scala-logging_2.13/3.9.5/scala-logging_2.13-3.9.5.jar",
+            "/home/dione/.m2/repository/ch/qos/logback/logback-classic/1.2.11/logback-classic-1.2.11.jar",
+            "/home/dione/.m2/repository/ch/qos/logback/logback-core/1.2.11/logback-core-1.2.11.jar",
+            "/home/dione/.m2/repository/io/gatling/gatling-jsonpath/3.9.0/gatling-jsonpath-3.9.0.jar",
+            "/home/dione/.m2/repository/com/typesafe/akka/akka-slf4j_2.13/2.6.20/akka-slf4j_2.13-2.6.20.jar",
+            "/home/dione/.m2/repository/org/simpleflatmapper/lightning-csv/8.2.3/lightning-csv-8.2.3.jar",
+            "/home/dione/.m2/repository/org/simpleflatmapper/sfm-util/8.2.3/sfm-util-8.2.3.jar",
+            "/home/dione/.m2/repository/com/github/ben-manes/caffeine/caffeine/2.9.3/caffeine-2.9.3.jar",
+            "/home/dione/.m2/repository/org/checkerframework/checker-qual/3.19.0/checker-qual-3.19.0.jar",
+            "/home/dione/.m2/repository/com/google/errorprone/error_prone_annotations/2.10.0/error_prone_annotations-2.10.0.jar",
+            "/home/dione/.m2/repository/io/pebbletemplates/pebble/3.2.0/pebble-3.2.0.jar",
+            "/home/dione/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar",
+            "/home/dione/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.13/2.1.1/scala-parser-combinators_2.13-2.1.1.jar",
+            "/home/dione/.m2/repository/com/github/scopt/scopt_2.13/3.7.1/scopt_2.13-3.7.1.jar",
+            "/home/dione/.m2/repository/io/netty/netty-handler/4.1.86.Final/netty-handler-4.1.86.Final.jar",
+            "/home/dione/.m2/repository/io/netty/netty-resolver/4.1.86.Final/netty-resolver-4.1.86.Final.jar",
+            "/home/dione/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.86.Final/netty-transport-native-unix-common-4.1.86.Final.jar",
+            "/home/dione/.m2/repository/io/netty/netty-tcnative-classes/2.0.54.Final/netty-tcnative-classes-2.0.54.Final.jar",
+            "/home/dione/.m2/repository/com/softwaremill/quicklens/quicklens_2.13/1.9.0/quicklens_2.13-1.9.0.jar",
+            "/home/dione/.m2/repository/net/sf/saxon/Saxon-HE/10.6/Saxon-HE-10.6.jar",
+            "/home/dione/.m2/repository/org/jodd/jodd-lagarto/6.0.6/jodd-lagarto-6.0.6.jar",
+            "/home/dione/.m2/repository/org/jodd/jodd-util/6.1.0/jodd-util-6.1.0.jar",
+            "/home/dione/.m2/repository/io/burt/jmespath-jackson/0.5.1/jmespath-jackson-0.5.1.jar",
+            "/home/dione/.m2/repository/io/burt/jmespath-core/0.5.1/jmespath-core-0.5.1.jar",
+            "/home/dione/.m2/repository/io/gatling/gatling-core-java/3.9.0/gatling-core-java-3.9.0.jar",
+            "/home/dione/.m2/repository/net/jodah/typetools/0.6.3/typetools-0.6.3.jar",
+            "/home/dione/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
+            "/home/dione/.m2/repository/io/gatling/gatling-http/3.9.0/gatling-http-3.9.0.jar",
+            "/home/dione/.m2/repository/io/gatling/gatling-http-client/3.9.0/gatling-http-client-3.9.0.jar",
+            "/home/dione/.m2/repository/io/netty/netty-handler-proxy/4.1.86.Final/netty-handler-proxy-4.1.86.Final.jar",
+            "/home/dione/.m2/repository/io/netty/netty-codec-socks/4.1.86.Final/netty-codec-socks-4.1.86.Final.jar",
+            "/home/dione/.m2/repository/io/netty/netty-resolver-dns/4.1.86.Final/netty-resolver-dns-4.1.86.Final.jar",
+            "/home/dione/.m2/repository/io/netty/netty-codec-dns/4.1.86.Final/netty-codec-dns-4.1.86.Final.jar",
+            "/home/dione/.m2/repository/io/netty/netty-codec-http2/4.1.86.Final/netty-codec-http2-4.1.86.Final.jar",
+            "/home/dione/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.86.Final/netty-resolver-dns-native-macos-4.1.86.Final-osx-x86_64.jar",
+            "/home/dione/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.86.Final/netty-resolver-dns-classes-macos-4.1.86.Final.jar",
+            "/home/dione/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.86.Final/netty-resolver-dns-native-macos-4.1.86.Final-osx-aarch_64.jar",
+            "/home/dione/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.54.Final/netty-tcnative-boringssl-static-2.0.54.Final.jar",
+            "/home/dione/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.54.Final/netty-tcnative-boringssl-static-2.0.54.Final-linux-x86_64.jar",
+            "/home/dione/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.54.Final/netty-tcnative-boringssl-static-2.0.54.Final-linux-aarch_64.jar",
+            "/home/dione/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.54.Final/netty-tcnative-boringssl-static-2.0.54.Final-osx-x86_64.jar",
+            "/home/dione/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.54.Final/netty-tcnative-boringssl-static-2.0.54.Final-osx-aarch_64.jar",
+            "/home/dione/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.54.Final/netty-tcnative-boringssl-static-2.0.54.Final-windows-x86_64.jar",
+            "/home/dione/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.8.0/brotli4j-1.8.0.jar",
+            "/home/dione/.m2/repository/com/aayushatharva/brotli4j/native-linux-x86_64/1.8.0/native-linux-x86_64-1.8.0.jar",
+            "/home/dione/.m2/repository/com/aayushatharva/brotli4j/native-linux-aarch64/1.8.0/native-linux-aarch64-1.8.0.jar",
+            "/home/dione/.m2/repository/com/aayushatharva/brotli4j/native-osx-x86_64/1.8.0/native-osx-x86_64-1.8.0.jar",
+            "/home/dione/.m2/repository/com/aayushatharva/brotli4j/native-osx-aarch64/1.8.0/native-osx-aarch64-1.8.0.jar",
+            "/home/dione/.m2/repository/com/aayushatharva/brotli4j/native-windows-x86_64/1.8.0/native-windows-x86_64-1.8.0.jar",
+            "/home/dione/.m2/repository/io/gatling/gatling-http-java/3.9.0/gatling-http-java-3.9.0.jar",
+            "/home/dione/.m2/repository/io/gatling/gatling-jms/3.9.0/gatling-jms-3.9.0.jar",
+            "/home/dione/.m2/repository/javax/jms/javax.jms-api/2.0.1/javax.jms-api-2.0.1.jar",
+            "/home/dione/.m2/repository/com/eatthepath/fast-uuid/0.2.0/fast-uuid-0.2.0.jar",
+            "/home/dione/.m2/repository/io/gatling/gatling-jms-java/3.9.0/gatling-jms-java-3.9.0.jar",
+            "/home/dione/.m2/repository/io/gatling/gatling-mqtt/3.9.0/gatling-mqtt-3.9.0.jar",
+            "/home/dione/.m2/repository/io/netty/netty-codec-mqtt/4.1.86.Final/netty-codec-mqtt-4.1.86.Final.jar",
+            "/home/dione/.m2/repository/io/netty/netty-transport-native-epoll/4.1.86.Final/netty-transport-native-epoll-4.1.86.Final-linux-x86_64.jar",
+            "/home/dione/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.86.Final/netty-transport-classes-epoll-4.1.86.Final.jar",
+            "/home/dione/.m2/repository/io/netty/netty-transport-native-epoll/4.1.86.Final/netty-transport-native-epoll-4.1.86.Final-linux-aarch_64.jar",
+            "/home/dione/.m2/repository/io/gatling/gatling-mqtt-java/3.9.0/gatling-mqtt-java-3.9.0.jar",
+            "/home/dione/.m2/repository/io/gatling/gatling-jdbc/3.9.0/gatling-jdbc-3.9.0.jar",
+            "/home/dione/.m2/repository/io/gatling/gatling-jdbc-java/3.9.0/gatling-jdbc-java-3.9.0.jar",
+            "/home/dione/.m2/repository/io/gatling/gatling-redis/3.9.0/gatling-redis-3.9.0.jar",
+            "/home/dione/.m2/repository/net/debasishg/redisclient_2.13/3.42/redisclient_2.13-3.42.jar",
+            "/home/dione/.m2/repository/org/apache/commons/commons-pool2/2.8.0/commons-pool2-2.8.0.jar",
+            "/home/dione/.m2/repository/io/gatling/gatling-redis-java/3.9.0/gatling-redis-java-3.9.0.jar",
+            "/home/dione/.m2/repository/io/gatling/gatling-graphite/3.9.0/gatling-graphite-3.9.0.jar",
+            "/home/dione/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar",
+            "/home/dione/.m2/repository/io/gatling/gatling-charts/3.9.0/gatling-charts-3.9.0.jar",
+            "/home/dione/.m2/repository/com/tdunning/t-digest/3.1/t-digest-3.1.jar",
+            "/home/dione/.m2/repository/io/gatling/gatling-recorder/3.9.0/gatling-recorder-3.9.0.jar",
+            "/home/dione/.m2/repository/org/scala-lang/modules/scala-swing_2.13/3.0.0/scala-swing_2.13-3.0.0.jar",
+            "/home/dione/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar",
+            "/home/dione/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar",
+            "/home/dione/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.1/jackson-core-2.14.1.jar",
+            "/home/dione/.m2/repository/io/gatling/gatling-recorder-bc-shaded/1.72/gatling-recorder-bc-shaded-1.72.jar",
+            "/home/dione/.m2/repository/io/netty/netty-codec-http/4.1.86.Final/netty-codec-http-4.1.86.Final.jar",
+            "/home/dione/.m2/repository/io/netty/netty-common/4.1.86.Final/netty-common-4.1.86.Final.jar",
+            "/home/dione/.m2/repository/io/netty/netty-buffer/4.1.86.Final/netty-buffer-4.1.86.Final.jar",
+            "/home/dione/.m2/repository/io/netty/netty-transport/4.1.86.Final/netty-transport-4.1.86.Final.jar",
+            "/home/dione/.m2/repository/io/netty/netty-codec/4.1.86.Final/netty-codec-4.1.86.Final.jar",
+            "/home/dione/.m2/repository/com/typesafe/akka/akka-actor_2.13/2.6.20/akka-actor_2.13-2.6.20.jar",
+            "/home/dione/.m2/repository/com/typesafe/config/1.4.2/config-1.4.2.jar",
+            "/home/dione/.m2/repository/org/scala-lang/modules/scala-java8-compat_2.13/1.0.0/scala-java8-compat_2.13-1.0.0.jar",
+            "/home/dione/.m2/repository/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar"
+        ],
+        "out": "/home/dione/Documents/Projet/ProjetDaouda/TestPerformance/OmsAPIGatling/target",
+        "classesDir": "/home/dione/Documents/Projet/ProjetDaouda/TestPerformance/OmsAPIGatling/target/test-classes",
+        "resources": [
+            "/home/dione/Documents/Projet/ProjetDaouda/TestPerformance/OmsAPIGatling/src/test/resources"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.13.10",
+            "options": [
+                "-release",
+                "17"
+            ],
+            "jars": [
+                "/home/dione/.m2/repository/org/jline/jline/3.21.0/jline-3.21.0.jar",
+                "/home/dione/.m2/repository/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar",
+                "/home/dione/.m2/repository/org/scala-lang/scala-reflect/2.13.10/scala-reflect-2.13.10.jar",
+                "/home/dione/.m2/repository/io/github/java-diff-utils/java-diff-utils/4.12/java-diff-utils-4.12.jar",
+                "/home/dione/.m2/repository/net/java/dev/jna/jna/5.9.0/jna-5.9.0.jar",
+                "/home/dione/.m2/repository/org/scala-lang/scala-compiler/2.13.10/scala-compiler-2.13.10.jar"
+            ],
+            "setup": {
+                "order": "java->scala",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                "-g",
+                "-target",
+                "17",
+                "-source",
+                "17",
+                "-encoding",
+                "UTF-8"
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework",
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "utest.runner.Framework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    {
+                        "args": [
+                            "-v",
+                            "-a"
+                        ],
+                        "framework": {
+                            "names": [
+                                "com.novocode.junit.JUnitFramework"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/usr/lib/jvm/java-17-openjdk-amd64",
+                "options": [
+                    
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "io.netty",
+                    "name": "netty-tcnative-boringssl-static",
+                    "version": "2.0.54.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-tcnative-boringssl-static",
+                            "classifier": "linux-x86_64",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.54.Final/netty-tcnative-boringssl-static-2.0.54.Final-linux-x86_64.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.eatthepath",
+                    "name": "fast-uuid",
+                    "version": "0.2.0",
+                    "artifacts": [
+                        {
+                            "name": "fast-uuid",
+                            "path": "/home/dione/.m2/repository/com/eatthepath/fast-uuid/0.2.0/fast-uuid-0.2.0.jar"
+                        },
+                        {
+                            "name": "fast-uuid",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/com/eatthepath/fast-uuid/0.2.0/fast-uuid-0.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-api",
+                    "version": "1.7.36",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-api",
+                            "path": "/home/dione/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar"
+                        },
+                        {
+                            "name": "slf4j-api",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.simpleflatmapper",
+                    "name": "lightning-csv",
+                    "version": "8.2.3",
+                    "artifacts": [
+                        {
+                            "name": "lightning-csv",
+                            "path": "/home/dione/.m2/repository/org/simpleflatmapper/lightning-csv/8.2.3/lightning-csv-8.2.3.jar"
+                        },
+                        {
+                            "name": "lightning-csv",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/org/simpleflatmapper/lightning-csv/8.2.3/lightning-csv-8.2.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-tcnative-boringssl-static",
+                    "version": "2.0.54.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-tcnative-boringssl-static",
+                            "classifier": "windows-x86_64",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.54.Final/netty-tcnative-boringssl-static-2.0.54.Final-windows-x86_64.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.aayushatharva.brotli4j",
+                    "name": "native-osx-x86_64",
+                    "version": "1.8.0",
+                    "artifacts": [
+                        {
+                            "name": "native-osx-x86_64",
+                            "path": "/home/dione/.m2/repository/com/aayushatharva/brotli4j/native-osx-x86_64/1.8.0/native-osx-x86_64-1.8.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-core",
+                    "version": "3.9.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-core",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-core/3.9.0/gatling-core-3.9.0.jar"
+                        },
+                        {
+                            "name": "gatling-core",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-core/3.9.0/gatling-core-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-tcnative-boringssl-static",
+                    "version": "2.0.54.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-tcnative-boringssl-static",
+                            "classifier": "osx-aarch_64",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.54.Final/netty-tcnative-boringssl-static-2.0.54.Final-osx-aarch_64.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-annotations",
+                    "version": "2.14.1",
+                    "artifacts": [
+                        {
+                            "name": "jackson-annotations",
+                            "path": "/home/dione/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar"
+                        },
+                        {
+                            "name": "jackson-annotations",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.softwaremill.quicklens",
+                    "name": "quicklens_2.13",
+                    "version": "1.9.0",
+                    "artifacts": [
+                        {
+                            "name": "quicklens_2.13",
+                            "path": "/home/dione/.m2/repository/com/softwaremill/quicklens/quicklens_2.13/1.9.0/quicklens_2.13-1.9.0.jar"
+                        },
+                        {
+                            "name": "quicklens_2.13",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/com/softwaremill/quicklens/quicklens_2.13/1.9.0/quicklens_2.13-1.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "javax.jms",
+                    "name": "javax.jms-api",
+                    "version": "2.0.1",
+                    "artifacts": [
+                        {
+                            "name": "javax.jms-api",
+                            "path": "/home/dione/.m2/repository/javax/jms/javax.jms-api/2.0.1/javax.jms-api-2.0.1.jar"
+                        },
+                        {
+                            "name": "javax.jms-api",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/javax/jms/javax.jms-api/2.0.1/javax.jms-api-2.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-http",
+                    "version": "3.9.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-http",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-http/3.9.0/gatling-http-3.9.0.jar"
+                        },
+                        {
+                            "name": "gatling-http",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-http/3.9.0/gatling-http-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.debasishg",
+                    "name": "redisclient_2.13",
+                    "version": "3.42",
+                    "artifacts": [
+                        {
+                            "name": "redisclient_2.13",
+                            "path": "/home/dione/.m2/repository/net/debasishg/redisclient_2.13/3.42/redisclient_2.13-3.42.jar"
+                        },
+                        {
+                            "name": "redisclient_2.13",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/net/debasishg/redisclient_2.13/3.42/redisclient_2.13-3.42-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-redis-java",
+                    "version": "3.9.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-redis-java",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-redis-java/3.9.0/gatling-redis-java-3.9.0.jar"
+                        },
+                        {
+                            "name": "gatling-redis-java",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-redis-java/3.9.0/gatling-redis-java-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport-native-epoll",
+                    "version": "4.1.86.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport-native-epoll",
+                            "classifier": "linux-aarch_64",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-transport-native-epoll/4.1.86.Final/netty-transport-native-epoll-4.1.86.Final-linux-aarch_64.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-resolver-dns-native-macos",
+                    "version": "4.1.86.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-resolver-dns-native-macos",
+                            "classifier": "osx-x86_64",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.86.Final/netty-resolver-dns-native-macos-4.1.86.Final-osx-x86_64.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-dns",
+                    "version": "4.1.86.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-dns",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-codec-dns/4.1.86.Final/netty-codec-dns-4.1.86.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-dns",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-codec-dns/4.1.86.Final/netty-codec-dns-4.1.86.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-mqtt-java",
+                    "version": "3.9.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-mqtt-java",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-mqtt-java/3.9.0/gatling-mqtt-java-3.9.0.jar"
+                        },
+                        {
+                            "name": "gatling-mqtt-java",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-mqtt-java/3.9.0/gatling-mqtt-java-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-core",
+                    "version": "2.14.1",
+                    "artifacts": [
+                        {
+                            "name": "jackson-core",
+                            "path": "/home/dione/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.1/jackson-core-2.14.1.jar"
+                        },
+                        {
+                            "name": "jackson-core",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.1/jackson-core-2.14.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-java8-compat_2.13",
+                    "version": "1.0.0",
+                    "artifacts": [
+                        {
+                            "name": "scala-java8-compat_2.13",
+                            "path": "/home/dione/.m2/repository/org/scala-lang/modules/scala-java8-compat_2.13/1.0.0/scala-java8-compat_2.13-1.0.0.jar"
+                        },
+                        {
+                            "name": "scala-java8-compat_2.13",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/org/scala-lang/modules/scala-java8-compat_2.13/1.0.0/scala-java8-compat_2.13-1.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-common",
+                    "version": "4.1.86.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-common",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-common/4.1.86.Final/netty-common-4.1.86.Final.jar"
+                        },
+                        {
+                            "name": "netty-common",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-common/4.1.86.Final/netty-common-4.1.86.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.tdunning",
+                    "name": "t-digest",
+                    "version": "3.1",
+                    "artifacts": [
+                        {
+                            "name": "t-digest",
+                            "path": "/home/dione/.m2/repository/com/tdunning/t-digest/3.1/t-digest-3.1.jar"
+                        },
+                        {
+                            "name": "t-digest",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/com/tdunning/t-digest/3.1/t-digest-3.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.aayushatharva.brotli4j",
+                    "name": "native-linux-aarch64",
+                    "version": "1.8.0",
+                    "artifacts": [
+                        {
+                            "name": "native-linux-aarch64",
+                            "path": "/home/dione/.m2/repository/com/aayushatharva/brotli4j/native-linux-aarch64/1.8.0/native-linux-aarch64-1.8.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.13.10",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "path": "/home/dione/.m2/repository/org/scala-lang/scala-reflect/2.13.10/scala-reflect-2.13.10.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/org/scala-lang/scala-reflect/2.13.10/scala-reflect-2.13.10-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.checkerframework",
+                    "name": "checker-qual",
+                    "version": "3.19.0",
+                    "artifacts": [
+                        {
+                            "name": "checker-qual",
+                            "path": "/home/dione/.m2/repository/org/checkerframework/checker-qual/3.19.0/checker-qual-3.19.0.jar"
+                        },
+                        {
+                            "name": "checker-qual",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/org/checkerframework/checker-qual/3.19.0/checker-qual-3.19.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-jms-java",
+                    "version": "3.9.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-jms-java",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-jms-java/3.9.0/gatling-jms-java-3.9.0.jar"
+                        },
+                        {
+                            "name": "gatling-jms-java",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-jms-java/3.9.0/gatling-jms-java-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.burt",
+                    "name": "jmespath-jackson",
+                    "version": "0.5.1",
+                    "artifacts": [
+                        {
+                            "name": "jmespath-jackson",
+                            "path": "/home/dione/.m2/repository/io/burt/jmespath-jackson/0.5.1/jmespath-jackson-0.5.1.jar"
+                        },
+                        {
+                            "name": "jmespath-jackson",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/burt/jmespath-jackson/0.5.1/jmespath-jackson-0.5.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-jdbc",
+                    "version": "3.9.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-jdbc",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-jdbc/3.9.0/gatling-jdbc-3.9.0.jar"
+                        },
+                        {
+                            "name": "gatling-jdbc",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-jdbc/3.9.0/gatling-jdbc-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.jodah",
+                    "name": "typetools",
+                    "version": "0.6.3",
+                    "artifacts": [
+                        {
+                            "name": "typetools",
+                            "path": "/home/dione/.m2/repository/net/jodah/typetools/0.6.3/typetools-0.6.3.jar"
+                        },
+                        {
+                            "name": "typetools",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/net/jodah/typetools/0.6.3/typetools-0.6.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-app",
+                    "version": "3.9.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-app",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-app/3.9.0/gatling-app-3.9.0.jar"
+                        },
+                        {
+                            "name": "gatling-app",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-app/3.9.0/gatling-app-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling.highcharts",
+                    "name": "gatling-charts-highcharts",
+                    "version": "3.9.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-charts-highcharts",
+                            "path": "/home/dione/.m2/repository/io/gatling/highcharts/gatling-charts-highcharts/3.9.0/gatling-charts-highcharts-3.9.0.jar"
+                        },
+                        {
+                            "name": "gatling-charts-highcharts",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/highcharts/gatling-charts-highcharts/3.9.0/gatling-charts-highcharts-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.scala-logging",
+                    "name": "scala-logging_2.13",
+                    "version": "3.9.5",
+                    "artifacts": [
+                        {
+                            "name": "scala-logging_2.13",
+                            "path": "/home/dione/.m2/repository/com/typesafe/scala-logging/scala-logging_2.13/3.9.5/scala-logging_2.13-3.9.5.jar"
+                        },
+                        {
+                            "name": "scala-logging_2.13",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/com/typesafe/scala-logging/scala-logging_2.13/3.9.5/scala-logging_2.13-3.9.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec",
+                    "version": "4.1.86.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-codec/4.1.86.Final/netty-codec-4.1.86.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-codec/4.1.86.Final/netty-codec-4.1.86.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.unbescape",
+                    "name": "unbescape",
+                    "version": "1.1.6.RELEASE",
+                    "artifacts": [
+                        {
+                            "name": "unbescape",
+                            "path": "/home/dione/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar"
+                        },
+                        {
+                            "name": "unbescape",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-charts",
+                    "version": "3.9.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-charts",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-charts/3.9.0/gatling-charts-3.9.0.jar"
+                        },
+                        {
+                            "name": "gatling-charts",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-charts/3.9.0/gatling-charts-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.10",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/home/dione/.m2/repository/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-recorder",
+                    "version": "3.9.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-recorder",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-recorder/3.9.0/gatling-recorder-3.9.0.jar"
+                        },
+                        {
+                            "name": "gatling-recorder",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-recorder/3.9.0/gatling-recorder-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-parser-combinators_2.13",
+                    "version": "2.1.1",
+                    "artifacts": [
+                        {
+                            "name": "scala-parser-combinators_2.13",
+                            "path": "/home/dione/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.13/2.1.1/scala-parser-combinators_2.13-2.1.1.jar"
+                        },
+                        {
+                            "name": "scala-parser-combinators_2.13",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.13/2.1.1/scala-parser-combinators_2.13-2.1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "spire-macros_2.13",
+                    "version": "0.17.0",
+                    "artifacts": [
+                        {
+                            "name": "spire-macros_2.13",
+                            "path": "/home/dione/.m2/repository/org/typelevel/spire-macros_2.13/0.17.0/spire-macros_2.13-0.17.0.jar"
+                        },
+                        {
+                            "name": "spire-macros_2.13",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/org/typelevel/spire-macros_2.13/0.17.0/spire-macros_2.13-0.17.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe",
+                    "name": "config",
+                    "version": "1.4.2",
+                    "artifacts": [
+                        {
+                            "name": "config",
+                            "path": "/home/dione/.m2/repository/com/typesafe/config/1.4.2/config-1.4.2.jar"
+                        },
+                        {
+                            "name": "config",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/com/typesafe/config/1.4.2/config-1.4.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.aayushatharva.brotli4j",
+                    "name": "brotli4j",
+                    "version": "1.8.0",
+                    "artifacts": [
+                        {
+                            "name": "brotli4j",
+                            "path": "/home/dione/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.8.0/brotli4j-1.8.0.jar"
+                        },
+                        {
+                            "name": "brotli4j",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.8.0/brotli4j-1.8.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-actor_2.13",
+                    "version": "2.6.20",
+                    "artifacts": [
+                        {
+                            "name": "akka-actor_2.13",
+                            "path": "/home/dione/.m2/repository/com/typesafe/akka/akka-actor_2.13/2.6.20/akka-actor_2.13-2.6.20.jar"
+                        },
+                        {
+                            "name": "akka-actor_2.13",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/com/typesafe/akka/akka-actor_2.13/2.6.20/akka-actor_2.13-2.6.20-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-http-client",
+                    "version": "3.9.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-http-client",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-http-client/3.9.0/gatling-http-client-3.9.0.jar"
+                        },
+                        {
+                            "name": "gatling-http-client",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-http-client/3.9.0/gatling-http-client-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.suzaku",
+                    "name": "boopickle_2.13",
+                    "version": "1.3.3",
+                    "artifacts": [
+                        {
+                            "name": "boopickle_2.13",
+                            "path": "/home/dione/.m2/repository/io/suzaku/boopickle_2.13/1.3.3/boopickle_2.13-1.3.3.jar"
+                        },
+                        {
+                            "name": "boopickle_2.13",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/suzaku/boopickle_2.13/1.3.3/boopickle_2.13-1.3.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-netty-util",
+                    "version": "3.9.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-netty-util",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-netty-util/3.9.0/gatling-netty-util-3.9.0.jar"
+                        },
+                        {
+                            "name": "gatling-netty-util",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-netty-util/3.9.0/gatling-netty-util-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-commons",
+                    "version": "3.9.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-commons",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-commons/3.9.0/gatling-commons-3.9.0.jar"
+                        },
+                        {
+                            "name": "gatling-commons",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-commons/3.9.0/gatling-commons-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.simpleflatmapper",
+                    "name": "sfm-util",
+                    "version": "8.2.3",
+                    "artifacts": [
+                        {
+                            "name": "sfm-util",
+                            "path": "/home/dione/.m2/repository/org/simpleflatmapper/sfm-util/8.2.3/sfm-util-8.2.3.jar"
+                        },
+                        {
+                            "name": "sfm-util",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/org/simpleflatmapper/sfm-util/8.2.3/sfm-util-8.2.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-resolver-dns",
+                    "version": "4.1.86.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-resolver-dns",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-resolver-dns/4.1.86.Final/netty-resolver-dns-4.1.86.Final.jar"
+                        },
+                        {
+                            "name": "netty-resolver-dns",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-resolver-dns/4.1.86.Final/netty-resolver-dns-4.1.86.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-handler-proxy",
+                    "version": "4.1.86.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-handler-proxy",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-handler-proxy/4.1.86.Final/netty-handler-proxy-4.1.86.Final.jar"
+                        },
+                        {
+                            "name": "netty-handler-proxy",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-handler-proxy/4.1.86.Final/netty-handler-proxy-4.1.86.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-commons-shared",
+                    "version": "3.9.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-commons-shared",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-commons-shared/3.9.0/gatling-commons-shared-3.9.0.jar"
+                        },
+                        {
+                            "name": "gatling-commons-shared",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-commons-shared/3.9.0/gatling-commons-shared-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty.incubator",
+                    "name": "netty-incubator-transport-native-io_uring",
+                    "version": "0.0.16.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-incubator-transport-native-io_uring",
+                            "classifier": "linux-x86_64",
+                            "path": "/home/dione/.m2/repository/io/netty/incubator/netty-incubator-transport-native-io_uring/0.0.16.Final/netty-incubator-transport-native-io_uring-0.0.16.Final-linux-x86_64.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-jdbc-java",
+                    "version": "3.9.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-jdbc-java",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-jdbc-java/3.9.0/gatling-jdbc-java-3.9.0.jar"
+                        },
+                        {
+                            "name": "gatling-jdbc-java",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-jdbc-java/3.9.0/gatling-jdbc-java-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-jsonpath",
+                    "version": "3.9.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-jsonpath",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-jsonpath/3.9.0/gatling-jsonpath-3.9.0.jar"
+                        },
+                        {
+                            "name": "gatling-jsonpath",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-jsonpath/3.9.0/gatling-jsonpath-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.pebbletemplates",
+                    "name": "pebble",
+                    "version": "3.2.0",
+                    "artifacts": [
+                        {
+                            "name": "pebble",
+                            "path": "/home/dione/.m2/repository/io/pebbletemplates/pebble/3.2.0/pebble-3.2.0.jar"
+                        },
+                        {
+                            "name": "pebble",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/pebbletemplates/pebble/3.2.0/pebble-3.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-resolver-dns-classes-macos",
+                    "version": "4.1.86.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-resolver-dns-classes-macos",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.86.Final/netty-resolver-dns-classes-macos-4.1.86.Final.jar"
+                        },
+                        {
+                            "name": "netty-resolver-dns-classes-macos",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.86.Final/netty-resolver-dns-classes-macos-4.1.86.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-slf4j_2.13",
+                    "version": "2.6.20",
+                    "artifacts": [
+                        {
+                            "name": "akka-slf4j_2.13",
+                            "path": "/home/dione/.m2/repository/com/typesafe/akka/akka-slf4j_2.13/2.6.20/akka-slf4j_2.13-2.6.20.jar"
+                        },
+                        {
+                            "name": "akka-slf4j_2.13",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/com/typesafe/akka/akka-slf4j_2.13/2.6.20/akka-slf4j_2.13-2.6.20-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.jodd",
+                    "name": "jodd-lagarto",
+                    "version": "6.0.6",
+                    "artifacts": [
+                        {
+                            "name": "jodd-lagarto",
+                            "path": "/home/dione/.m2/repository/org/jodd/jodd-lagarto/6.0.6/jodd-lagarto-6.0.6.jar"
+                        },
+                        {
+                            "name": "jodd-lagarto",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/org/jodd/jodd-lagarto/6.0.6/jodd-lagarto-6.0.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-recorder-bc-shaded",
+                    "version": "1.72",
+                    "artifacts": [
+                        {
+                            "name": "gatling-recorder-bc-shaded",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-recorder-bc-shaded/1.72/gatling-recorder-bc-shaded-1.72.jar"
+                        },
+                        {
+                            "name": "gatling-recorder-bc-shaded",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-recorder-bc-shaded/1.72/gatling-recorder-bc-shaded-1.72-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-redis",
+                    "version": "3.9.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-redis",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-redis/3.9.0/gatling-redis-3.9.0.jar"
+                        },
+                        {
+                            "name": "gatling-redis",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-redis/3.9.0/gatling-redis-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-tcnative-boringssl-static",
+                    "version": "2.0.54.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-tcnative-boringssl-static",
+                            "classifier": "linux-aarch_64",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.54.Final/netty-tcnative-boringssl-static-2.0.54.Final-linux-aarch_64.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport",
+                    "version": "4.1.86.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-transport/4.1.86.Final/netty-transport-4.1.86.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-transport/4.1.86.Final/netty-transport-4.1.86.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-tcnative-boringssl-static",
+                    "version": "2.0.54.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-tcnative-boringssl-static",
+                            "classifier": "osx-x86_64",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.54.Final/netty-tcnative-boringssl-static-2.0.54.Final-osx-x86_64.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.aayushatharva.brotli4j",
+                    "name": "native-windows-x86_64",
+                    "version": "1.8.0",
+                    "artifacts": [
+                        {
+                            "name": "native-windows-x86_64",
+                            "path": "/home/dione/.m2/repository/com/aayushatharva/brotli4j/native-windows-x86_64/1.8.0/native-windows-x86_64-1.8.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-tcnative-classes",
+                    "version": "2.0.54.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-tcnative-classes",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-tcnative-classes/2.0.54.Final/netty-tcnative-classes-2.0.54.Final.jar"
+                        },
+                        {
+                            "name": "netty-tcnative-classes",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-tcnative-classes/2.0.54.Final/netty-tcnative-classes-2.0.54.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.aayushatharva.brotli4j",
+                    "name": "native-linux-x86_64",
+                    "version": "1.8.0",
+                    "artifacts": [
+                        {
+                            "name": "native-linux-x86_64",
+                            "path": "/home/dione/.m2/repository/com/aayushatharva/brotli4j/native-linux-x86_64/1.8.0/native-linux-x86_64-1.8.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.scopt",
+                    "name": "scopt_2.13",
+                    "version": "3.7.1",
+                    "artifacts": [
+                        {
+                            "name": "scopt_2.13",
+                            "path": "/home/dione/.m2/repository/com/github/scopt/scopt_2.13/3.7.1/scopt_2.13-3.7.1.jar"
+                        },
+                        {
+                            "name": "scopt_2.13",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/com/github/scopt/scopt_2.13/3.7.1/scopt_2.13-3.7.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-resolver-dns-native-macos",
+                    "version": "4.1.86.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-resolver-dns-native-macos",
+                            "classifier": "osx-aarch_64",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.86.Final/netty-resolver-dns-native-macos-4.1.86.Final-osx-aarch_64.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-http",
+                    "version": "4.1.86.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-http",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-codec-http/4.1.86.Final/netty-codec-http-4.1.86.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-http",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-codec-http/4.1.86.Final/netty-codec-http-4.1.86.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty.incubator",
+                    "name": "netty-incubator-transport-native-io_uring",
+                    "version": "0.0.16.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-incubator-transport-native-io_uring",
+                            "classifier": "linux-aarch_64",
+                            "path": "/home/dione/.m2/repository/io/netty/incubator/netty-incubator-transport-native-io_uring/0.0.16.Final/netty-incubator-transport-native-io_uring-0.0.16.Final-linux-aarch_64.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.ben-manes.caffeine",
+                    "name": "caffeine",
+                    "version": "2.9.3",
+                    "artifacts": [
+                        {
+                            "name": "caffeine",
+                            "path": "/home/dione/.m2/repository/com/github/ben-manes/caffeine/caffeine/2.9.3/caffeine-2.9.3.jar"
+                        },
+                        {
+                            "name": "caffeine",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/com/github/ben-manes/caffeine/caffeine/2.9.3/caffeine-2.9.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-mqtt",
+                    "version": "4.1.86.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-mqtt",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-codec-mqtt/4.1.86.Final/netty-codec-mqtt-4.1.86.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-mqtt",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-codec-mqtt/4.1.86.Final/netty-codec-mqtt-4.1.86.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty.incubator",
+                    "name": "netty-incubator-transport-classes-io_uring",
+                    "version": "0.0.16.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-incubator-transport-classes-io_uring",
+                            "path": "/home/dione/.m2/repository/io/netty/incubator/netty-incubator-transport-classes-io_uring/0.0.16.Final/netty-incubator-transport-classes-io_uring-0.0.16.Final.jar"
+                        },
+                        {
+                            "name": "netty-incubator-transport-classes-io_uring",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/netty/incubator/netty-incubator-transport-classes-io_uring/0.0.16.Final/netty-incubator-transport-classes-io_uring-0.0.16.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-handler",
+                    "version": "4.1.86.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-handler",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-handler/4.1.86.Final/netty-handler-4.1.86.Final.jar"
+                        },
+                        {
+                            "name": "netty-handler",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-handler/4.1.86.Final/netty-handler-4.1.86.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport-native-unix-common",
+                    "version": "4.1.86.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport-native-unix-common",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.86.Final/netty-transport-native-unix-common-4.1.86.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport-native-unix-common",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.86.Final/netty-transport-native-unix-common-4.1.86.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-databind",
+                    "version": "2.14.1",
+                    "artifacts": [
+                        {
+                            "name": "jackson-databind",
+                            "path": "/home/dione/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar"
+                        },
+                        {
+                            "name": "jackson-databind",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-buffer",
+                    "version": "4.1.86.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-buffer",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-buffer/4.1.86.Final/netty-buffer-4.1.86.Final.jar"
+                        },
+                        {
+                            "name": "netty-buffer",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-buffer/4.1.86.Final/netty-buffer-4.1.86.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-jdk-util",
+                    "version": "3.9.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-jdk-util",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-jdk-util/3.9.0/gatling-jdk-util-3.9.0.jar"
+                        },
+                        {
+                            "name": "gatling-jdk-util",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-jdk-util/3.9.0/gatling-jdk-util-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport-native-epoll",
+                    "version": "4.1.86.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport-native-epoll",
+                            "classifier": "linux-x86_64",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-transport-native-epoll/4.1.86.Final/netty-transport-native-epoll-4.1.86.Final-linux-x86_64.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-resolver",
+                    "version": "4.1.86.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-resolver",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-resolver/4.1.86.Final/netty-resolver-4.1.86.Final.jar"
+                        },
+                        {
+                            "name": "netty-resolver",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-resolver/4.1.86.Final/netty-resolver-4.1.86.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-socks",
+                    "version": "4.1.86.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-socks",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-codec-socks/4.1.86.Final/netty-codec-socks-4.1.86.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-socks",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-codec-socks/4.1.86.Final/netty-codec-socks-4.1.86.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-jms",
+                    "version": "3.9.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-jms",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-jms/3.9.0/gatling-jms-3.9.0.jar"
+                        },
+                        {
+                            "name": "gatling-jms",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-jms/3.9.0/gatling-jms-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.burt",
+                    "name": "jmespath-core",
+                    "version": "0.5.1",
+                    "artifacts": [
+                        {
+                            "name": "jmespath-core",
+                            "path": "/home/dione/.m2/repository/io/burt/jmespath-core/0.5.1/jmespath-core-0.5.1.jar"
+                        },
+                        {
+                            "name": "jmespath-core",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/burt/jmespath-core/0.5.1/jmespath-core-0.5.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-pool2",
+                    "version": "2.8.0",
+                    "artifacts": [
+                        {
+                            "name": "commons-pool2",
+                            "path": "/home/dione/.m2/repository/org/apache/commons/commons-pool2/2.8.0/commons-pool2-2.8.0.jar"
+                        },
+                        {
+                            "name": "commons-pool2",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/org/apache/commons/commons-pool2/2.8.0/commons-pool2-2.8.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.aayushatharva.brotli4j",
+                    "name": "native-osx-aarch64",
+                    "version": "1.8.0",
+                    "artifacts": [
+                        {
+                            "name": "native-osx-aarch64",
+                            "path": "/home/dione/.m2/repository/com/aayushatharva/brotli4j/native-osx-aarch64/1.8.0/native-osx-aarch64-1.8.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-http-java",
+                    "version": "3.9.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-http-java",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-http-java/3.9.0/gatling-http-java-3.9.0.jar"
+                        },
+                        {
+                            "name": "gatling-http-java",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-http-java/3.9.0/gatling-http-java-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-swing_2.13",
+                    "version": "3.0.0",
+                    "artifacts": [
+                        {
+                            "name": "scala-swing_2.13",
+                            "path": "/home/dione/.m2/repository/org/scala-lang/modules/scala-swing_2.13/3.0.0/scala-swing_2.13-3.0.0.jar"
+                        },
+                        {
+                            "name": "scala-swing_2.13",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/org/scala-lang/modules/scala-swing_2.13/3.0.0/scala-swing_2.13-3.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-http2",
+                    "version": "4.1.86.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-http2",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-codec-http2/4.1.86.Final/netty-codec-http2-4.1.86.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-http2",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-codec-http2/4.1.86.Final/netty-codec-http2-4.1.86.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.sf.saxon",
+                    "name": "Saxon-HE",
+                    "version": "10.6",
+                    "artifacts": [
+                        {
+                            "name": "Saxon-HE",
+                            "path": "/home/dione/.m2/repository/net/sf/saxon/Saxon-HE/10.6/Saxon-HE-10.6.jar"
+                        },
+                        {
+                            "name": "Saxon-HE",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/net/sf/saxon/Saxon-HE/10.6/Saxon-HE-10.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-commons-shared-unstable",
+                    "version": "3.9.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-commons-shared-unstable",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-commons-shared-unstable/3.9.0/gatling-commons-shared-unstable-3.9.0.jar"
+                        },
+                        {
+                            "name": "gatling-commons-shared-unstable",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-commons-shared-unstable/3.9.0/gatling-commons-shared-unstable-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.errorprone",
+                    "name": "error_prone_annotations",
+                    "version": "2.10.0",
+                    "artifacts": [
+                        {
+                            "name": "error_prone_annotations",
+                            "path": "/home/dione/.m2/repository/com/google/errorprone/error_prone_annotations/2.10.0/error_prone_annotations-2.10.0.jar"
+                        },
+                        {
+                            "name": "error_prone_annotations",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/com/google/errorprone/error_prone_annotations/2.10.0/error_prone_annotations-2.10.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.qos.logback",
+                    "name": "logback-classic",
+                    "version": "1.2.11",
+                    "artifacts": [
+                        {
+                            "name": "logback-classic",
+                            "path": "/home/dione/.m2/repository/ch/qos/logback/logback-classic/1.2.11/logback-classic-1.2.11.jar"
+                        },
+                        {
+                            "name": "logback-classic",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/ch/qos/logback/logback-classic/1.2.11/logback-classic-1.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.jodd",
+                    "name": "jodd-util",
+                    "version": "6.1.0",
+                    "artifacts": [
+                        {
+                            "name": "jodd-util",
+                            "path": "/home/dione/.m2/repository/org/jodd/jodd-util/6.1.0/jodd-util-6.1.0.jar"
+                        },
+                        {
+                            "name": "jodd-util",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/org/jodd/jodd-util/6.1.0/jodd-util-6.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.hdrhistogram",
+                    "name": "HdrHistogram",
+                    "version": "2.1.12",
+                    "artifacts": [
+                        {
+                            "name": "HdrHistogram",
+                            "path": "/home/dione/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar"
+                        },
+                        {
+                            "name": "HdrHistogram",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-tcnative-boringssl-static",
+                    "version": "2.0.54.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-tcnative-boringssl-static",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.54.Final/netty-tcnative-boringssl-static-2.0.54.Final.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.qos.logback",
+                    "name": "logback-core",
+                    "version": "1.2.11",
+                    "artifacts": [
+                        {
+                            "name": "logback-core",
+                            "path": "/home/dione/.m2/repository/ch/qos/logback/logback-core/1.2.11/logback-core-1.2.11.jar"
+                        },
+                        {
+                            "name": "logback-core",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/ch/qos/logback/logback-core/1.2.11/logback-core-1.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-mqtt",
+                    "version": "3.9.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-mqtt",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-mqtt/3.9.0/gatling-mqtt-3.9.0.jar"
+                        },
+                        {
+                            "name": "gatling-mqtt",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-mqtt/3.9.0/gatling-mqtt-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.code.findbugs",
+                    "name": "jsr305",
+                    "version": "3.0.2",
+                    "artifacts": [
+                        {
+                            "name": "jsr305",
+                            "path": "/home/dione/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar"
+                        },
+                        {
+                            "name": "jsr305",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport-classes-epoll",
+                    "version": "4.1.86.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport-classes-epoll",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.86.Final/netty-transport-classes-epoll-4.1.86.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport-classes-epoll",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.86.Final/netty-transport-classes-epoll-4.1.86.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-core-java",
+                    "version": "3.9.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-core-java",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-core-java/3.9.0/gatling-core-java-3.9.0.jar"
+                        },
+                        {
+                            "name": "gatling-core-java",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-core-java/3.9.0/gatling-core-java-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-graphite",
+                    "version": "3.9.0",
+                    "artifacts": [
+                        {
+                            "name": "gatling-graphite",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-graphite/3.9.0/gatling-graphite-3.9.0.jar"
+                        },
+                        {
+                            "name": "gatling-graphite",
+                            "classifier": "sources",
+                            "path": "/home/dione/.m2/repository/io/gatling/gatling-graphite/3.9.0/gatling-graphite-3.9.0-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "test"
+        ]
+    }
+}
